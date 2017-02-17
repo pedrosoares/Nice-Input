@@ -1,0 +1,93 @@
+.nice-input, .nice-select {
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #a6c8ff;
+  }
+
+  &:disabled {
+    background: #e3e3e3;
+  }
+
+  &:focus {
+    border-color: #a6c8ff;
+  }
+
+  padding: 16px 6px 3px 6px;
+  box-shadow: none;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+
+}
+
+.nice-input, .nice-select,
+.nice-input:focus, .nice-select:focus,
+.nice-input:active, .nice-select:active,
+.nice-input:visited, .nice-select:visited,
+.nice-input:focus, .nice-select:focus  {
+  outline: 0 !important;
+}
+
+.nice-select {
+
+  appearance: none !important;
+  -moz-appearance: none !important; /* Firefox */
+  -webkit-appearance: none !important; /* Safari and Chrome */
+
+  &:-moz-focusring {
+    color: transparent !important;
+    text-shadow: 0 0 0 #000 !important;
+  }
+
+}
+
+.nice-input:focus ~ .nice-label,
+.nice-input:not(:focus):valid ~ .nice-label,
+.nice-input:disabled  ~ .nice-label,
+.nice-select:focus ~ .nice-label,
+.nice-select:disabled  ~ .nice-label,
+.nice-select.active ~ .nice-label{
+  top: 5px;
+  bottom: 10px;
+  left: 7px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.nice-select {
+  padding-left: 2px;
+}
+
+.nice-label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 12px;
+  transition: 0.2s ease all;
+  color: #999999;
+}
+
+.nice-container {
+  position: relative;
+}
+
+.nice-container .caret {
+  position: absolute;
+  top: 19px;
+  right: 15px;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+
+  border-top: 6px solid #000;
+}
+
+
+@import "nice-input-bt";
