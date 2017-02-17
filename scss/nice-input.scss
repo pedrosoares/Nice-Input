@@ -1,3 +1,9 @@
+$label-color: #999999;
+$label-size: 14px;
+$label-size-active: 10px;
+
+$input-size: 16px;
+
 .nice-input, .nice-select {
   width: 100%;
   box-sizing: border-box;
@@ -22,7 +28,7 @@
   box-shadow: none;
   border: 1px solid #cccccc;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: $input-size;
   background: white;
 
 }
@@ -59,7 +65,7 @@
   top: 5px;
   bottom: 10px;
   left: 7px;
-  font-size: 11px;
+  font-size: $label-size-active;
   opacity: 1;
 }
 
@@ -77,7 +83,8 @@
   left: 10px;
   top: 12px;
   transition: 0.2s ease all;
-  color: #999999;
+  color: $label-color;
+  font-size: $label-size;
 }
 
 .nice-container {
