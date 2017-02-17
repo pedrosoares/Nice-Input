@@ -2,6 +2,12 @@
   width: 100% !important;
   padding: 0;
   z-index: 10; }
+  .nice-input.bootstrap-select.nice-error, .nice-select.bootstrap-select.nice-error {
+    border: none; }
+    .nice-input.bootstrap-select.nice-error:hover button, .nice-select.bootstrap-select.nice-error:hover button {
+      border: 1px solid red; }
+    .nice-input.bootstrap-select.nice-error button, .nice-select.bootstrap-select.nice-error button {
+      border: 1px solid red; }
   .nice-input.bootstrap-select.open, .nice-select.bootstrap-select.open {
     border-color: #a6c8ff; }
     .nice-input.bootstrap-select.open button, .nice-select.bootstrap-select.open button {

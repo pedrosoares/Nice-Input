@@ -34,3 +34,60 @@
         }
     });
 })();
+
+(function () {
+    /**
+     * Pega os erros do Laravel em formato JSON
+     * procura os inputs responsaveis dentro do form tratado
+     * e adiciona as mensagens de erro no nice-label.
+     * Caso não exista ele adicionar o erro na varival(div) erro
+     * ou passa como parametro de o erro for uma function
+     * @param json
+     * @param erro
+     * @returns {jQuery.fn.NIJsonErros}
+     * @constructor
+     */
+    jQuery.fn.NIJsonErros = function(json, erro) {
+
+        var itens = this;
+
+        for(var i=0; i < itens.length; i++){
+            var element = $(this[i]); // It's your element
+            for(key in json) {
+
+                if(key.split(".").length > 1){
+                    key = key.replace(".", "[")+"]";
+                }
+
+                var input = element.find("[name='"+key+"']");
+                if(input.length) {
+                    for(var i=0; i < input.length; i++){
+                        input = $(input[i]);
+
+                        var container = input.parents(".nice-container");
+
+                        Cache.searchOrCreate(input);
+                        if(input.parents(".bootstrap-select").length){
+                            input = input.parents(".bootstrap-select");
+                        }
+                        input.addClass("nice-error");
+
+                        var nice_label = input.parents(".nice-container").find(".nice-label");
+                        if(nice_label.length) {
+                            nice_label.html(json[key]);
+                        }
+                    }
+                }else{
+                    if(typeof erro === "function"){
+                        erro(json[key], key);
+                    }else if(erro.length) {
+                        erro.html(erro.html() + json[key]).show();
+                    }
+                }
+
+            }
+        }
+
+        return this;
+    };
+})();

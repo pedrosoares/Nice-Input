@@ -13,6 +13,8 @@
     background: #e3e3e3; }
   .nice-input:focus, .nice-select:focus {
     border-color: #a6c8ff; }
+  .nice-input.nice-error, .nice-select.nice-error {
+    border: 1px solid red; }
 
 .nice-input, .nice-select,
 .nice-input:focus, .nice-select:focus,
@@ -32,10 +34,12 @@
     text-shadow: 0 0 0 #000 !important; }
 
 .nice-input:focus ~ .nice-label,
+.nice-input.nice-error ~ .nice-label,
 .nice-input:not(:focus):valid ~ .nice-label,
 .nice-input:disabled ~ .nice-label,
 .nice-select:focus ~ .nice-label,
 .nice-select:disabled ~ .nice-label,
+.nice-select.nice-error ~ .nice-label,
 .nice-select.active ~ .nice-label {
   top: 5px;
   bottom: 10px;
@@ -45,6 +49,9 @@
 
 .nice-select {
   padding-left: 2px; }
+
+.nice-error ~ .nice-label {
+  color: red; }
 
 .nice-label {
   position: absolute;

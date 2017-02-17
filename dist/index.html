@@ -33,7 +33,7 @@
     </div>
     <br/>
     <div class="nice-container">
-        <select title=" " class="nice-select">
+        <select name="select_nameb" title=" " class="nice-select">
             <option disabled selected value=""></option>
             <option>Hello</option>
         </select>
@@ -42,7 +42,7 @@
     </div>
     <br/>
     <div class="nice-container">
-        <select title=" " class="selectpicker nice-select">
+        <select name="select_namea" title=" " class="selectpicker nice-select">
             <option>Mustard</option>
             <option>Ketchup</option>
             <option>Relish</option>
@@ -67,5 +67,17 @@
     <script type="text/javascript" src="js/nice-input.js"></script>
     <!-- if you are using bootstrap select-picker -->
     <script type="text/javascript" src="js/nice-input-bt.js"></script>
+    <script>
+        $("body").NIJsonErros({
+            "text" : "Valor inválido",
+            "select_namea" : "Valor inválido",
+            "select_nameb" : "Valor inválido"
+        }, function (msg) {
+            console.log(msg);
+        });
+        setTimeout(function () {
+            $(".nice-select, .nice-input").NIClean();
+        }, 1000);
+    </script>
 </body>
 </html>

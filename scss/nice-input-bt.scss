@@ -4,6 +4,20 @@
     width: 100% !important;
     padding: 0;
 
+    &.nice-error {
+      border: none;
+
+      &:hover {
+        button {
+          border: 1px solid red;
+        }
+      }
+
+      button {
+        border: 1px solid red;
+      }
+    }
+
     &.open {
       border-color: #a6c8ff;
 
