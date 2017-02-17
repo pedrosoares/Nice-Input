@@ -1,8 +1,8 @@
-$label-color: #999999;
-$label-size: 14px;
-$label-size-active: 10px;
+$label-color: #999999 !default;
+$label-size: 14px !default;
+$label-size-active: 10px !default;
 
-$input-size: 16px;
+$input-size: 16px !default;
 
 .nice-input, .nice-select {
   width: 100%;
