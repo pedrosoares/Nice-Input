@@ -1,0 +1,43 @@
+.nice-input.bootstrap-select, .nice-select.bootstrap-select {
+  width: 100% !important;
+  padding: 0;
+  z-index: 10; }
+  .nice-input.bootstrap-select.open, .nice-select.bootstrap-select.open {
+    border-color: #a6c8ff; }
+    .nice-input.bootstrap-select.open button, .nice-select.bootstrap-select.open button {
+      background: none;
+      border: none;
+      box-shadow: none; }
+      .nice-input.bootstrap-select.open button:hover, .nice-select.bootstrap-select.open button:hover {
+        background: none;
+        border: none;
+        box-shadow: none; }
+      .nice-input.bootstrap-select.open button:focus, .nice-select.bootstrap-select.open button:focus {
+        background: none;
+        border: none;
+        box-shadow: none; }
+  .nice-input.bootstrap-select button, .nice-select.bootstrap-select button {
+    background: none;
+    border: none;
+    padding: 16px 2px 2px 6px; }
+    .nice-input.bootstrap-select button span, .nice-select.bootstrap-select button span {
+      color: #000; }
+    .nice-input.bootstrap-select button:hover, .nice-select.bootstrap-select button:hover {
+      background: none;
+      border: none; }
+    .nice-input.bootstrap-select button .caret, .nice-select.bootstrap-select button .caret {
+      display: none; }
+
+.nice-select.bootstrap-select:disabled ~ .nice-label,
+.nice-select.bootstrap-select.open ~ .nice-label,
+.nice-select.bootstrap-select.active ~ .nice-label {
+  top: 5px;
+  bottom: 10px;
+  left: 7px;
+  font-size: 11px;
+  opacity: 1; }
+
+.nice-label, .caret {
+  z-index: 11; }
+
+/*# sourceMappingURL=nice-input-bt.css.map */

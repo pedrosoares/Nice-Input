@@ -1,0 +1,22 @@
+{
+  "name": "nice-input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/nice-input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrosoares/Nice-Input.git"
+  },
+  "keywords": [
+    "nice-input"
+  ],
+  "author": "Pedro Augusto da Silva Soares (https://www.pedrosoares.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrosoares/Nice-Input/issues"
+  },
+  "homepage": "https://github.com/pedrosoares/Nice-Input#readme"
+}
