@@ -1,5 +1,5 @@
 .nice-input.bootstrap-select, .nice-select.bootstrap-select {
-  width: 100% !important;
+  width: 100%;
   padding: 0;
   z-index: 10; }
   .nice-input.bootstrap-select.nice-error, .nice-select.bootstrap-select.nice-error {
