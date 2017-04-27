@@ -106,6 +106,16 @@ $(".nice-select").each(function () {
                     ni.label.html(ni.label_name);
                 }
             }
+
+            var fields = $(this[i]).find(".nice-input, .nice-select");
+            jQuery.each(fields, function (key, value) {
+                var element = $(value);
+                var ni = Cache.searchOrCreate(element);
+                if(ni != null){
+                    ni.input.removeClass("nice-error");
+                    ni.label.html(ni.label_name);
+                }
+            });
         }
 
         return this;
